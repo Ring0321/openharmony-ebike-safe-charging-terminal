@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" agent="Codex generated draw.io source">
+  <diagram name="图2-1 硬件系统整体组成图" id="图2-1 硬件系统整体组成图">
+    <mxGraphModel dx="1256" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="txt2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontColor=#173B5B;fontStyle=1;fontFamily=Microsoft YaHei;" value="硬件系统整体组成图" vertex="1">
+          <mxGeometry height="46" width="450" x="40" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="txt3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#667789;fontStyle=0;fontFamily=Microsoft YaHei;" value="RK2206 主控 + 输入采集 + 继电器执行 + 现场反馈 + 云端监管" vertex="1">
+          <mxGeometry height="28" width="650" x="42" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="box4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#FFF6E8;strokeColor=#D5811F;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;RK2206 + OpenHarmony 主控单元&lt;/b&gt;&lt;br&gt;&lt;br&gt;LiteOS-M 多任务&lt;br&gt;事件队列 / 安全状态机&lt;br&gt;GPIO / I2C / UART / LCD&lt;br&gt;MQTT 通信" vertex="1">
+          <mxGeometry height="210" width="300" x="450" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="box5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF7EF;strokeColor=#238B55;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;身份授权模块&lt;/b&gt;&lt;br&gt;&lt;br&gt;RFID / 密码 / 按键&lt;br&gt;门禁认证板&lt;br&gt;AUTH_OK / STOP / RESET" vertex="1">
+          <mxGeometry height="110" width="250" x="60" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="box6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F2FAF5;strokeColor=#238B55;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;环境感知模块&lt;/b&gt;&lt;br&gt;&lt;br&gt;温湿度&lt;br&gt;烟雾 / 可燃气体&lt;br&gt;人体靠近检测" vertex="1">
+          <mxGeometry height="110" width="250" x="60" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="box7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F2FAF5;strokeColor=#238B55;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;电气检测模块&lt;/b&gt;&lt;br&gt;&lt;br&gt;INA219&lt;br&gt;电压 / 电流 / 功率&lt;br&gt;汽车充电状态" vertex="1">
+          <mxGeometry height="110" width="250" x="60" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="box8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#FDEEEF;strokeColor=#C94C4C;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;四路继电器执行模块&lt;/b&gt;&lt;br&gt;&lt;br&gt;K1 充电输出&lt;br&gt;K2 散热冷却&lt;br&gt;K3 告警提示&lt;br&gt;K4 保护锁断" vertex="1">
+          <mxGeometry height="150" width="260" x="890" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="box9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F1F3FF;strokeColor=#6574C4;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;现场反馈模块&lt;/b&gt;&lt;br&gt;&lt;br&gt;LCD 状态显示&lt;br&gt;RGB 指示灯&lt;br&gt;蜂鸣器 / 语音提示" vertex="1">
+          <mxGeometry height="120" width="260" x="890" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="box10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF5FD;strokeColor=#1F78B4;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;华为云 IoTDA / Web 可视化监管&lt;/b&gt;&lt;br&gt;&lt;br&gt;safeCharge 属性上报 | safe_charge_control 命令下发 | 远程断电 | 阈值配置" vertex="1">
+          <mxGeometry height="90" width="390" x="405" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="box11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF8F8;strokeColor=#168C8C;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#213142;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;低压样机与汽车充电终端扩展&lt;/b&gt;&lt;br&gt;&lt;br&gt;5V/12V 低压负载演示 | 模拟汽车充电流程 | 后续接入充电桩/充电柜" vertex="1">
+          <mxGeometry height="90" width="390" x="527.5" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" edge="1" parent="1" source="box5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#238B55;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#238B55;" target="box4" value="授权输入">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" edge="1" parent="1" source="box6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#238B55;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#238B55;" target="box4" value="环境数据">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge14" edge="1" parent="1" source="box7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#238B55;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#238B55;" target="box4" value="电气数据">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge15" edge="1" parent="1" source="box4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C94C4C;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#C94C4C;" target="box8" value="GPIO 控制">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge16" edge="1" parent="1" source="box4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#6574C4;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#6574C4;" target="box9" value="状态反馈">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge17" edge="1" parent="1" source="box4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#1F78B4;strokeWidth=3;endArrow=classic;endFill=1;startArrow=classic;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#1F78B4;" target="box10" value="MQTT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge18" edge="1" parent="1" source="box4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#168C8C;strokeWidth=3;endArrow=classic;endFill=1;startArrow=none;startFill=1;dashed=0;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#168C8C;" target="box11" value="低压负载">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="txt19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontColor=#173B5B;fontStyle=1;fontFamily=Microsoft YaHei;" value="安全控制闭环" vertex="1">
+          <mxGeometry height="28" width="870" x="250" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="cell20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="授权通过" vertex="1">
+          <mxGeometry height="32" width="105" x="250" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="充电输出" vertex="1">
+          <mxGeometry height="32" width="105" x="355" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="实时检测" vertex="1">
+          <mxGeometry height="32" width="105" x="460" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="风险判断" vertex="1">
+          <mxGeometry height="32" width="105" x="565" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="保护动作" vertex="1">
+          <mxGeometry height="32" width="105" x="670" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="云端同步" vertex="1">
+          <mxGeometry height="32" width="135" x="775" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="复位追溯" vertex="1">
+          <mxGeometry height="32" width="105" x="910" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFF3F7;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=1;align=center;verticalAlign=middle;spacing=5;" value="事件记录" vertex="1">
+          <mxGeometry height="32" width="105" x="1015" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cell28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="认证成功" vertex="1">
+          <mxGeometry height="32" width="105" x="250" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="K1 输出" vertex="1">
+          <mxGeometry height="32" width="105" x="355" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="功率/环境" vertex="1">
+          <mxGeometry height="32" width="105" x="460" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="状态机" vertex="1">
+          <mxGeometry height="32" width="105" x="565" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="告警/断电/散热" vertex="1">
+          <mxGeometry height="32" width="105" x="670" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="IoTDA" vertex="1">
+          <mxGeometry height="32" width="135" x="775" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="复位" vertex="1">
+          <mxGeometry height="32" width="105" x="910" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="cell35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4DDE6;strokeWidth=1;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#213142;fontStyle=0;align=center;verticalAlign=middle;spacing=5;" value="追溯" vertex="1">
+          <mxGeometry height="32" width="105" x="1015" y="722" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

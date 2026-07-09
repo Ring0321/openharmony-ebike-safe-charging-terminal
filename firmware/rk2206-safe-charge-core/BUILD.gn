@@ -1,0 +1,44 @@
+
+
+static_library("iot_smart_home_example") {
+  sources = [
+    "iot_smart_home_example.c",
+    "src/lcd.c",
+    "src/components.c",
+    "src/smart_home.c",
+    "src/smart_home_event.c",
+    "src/su_03t.c",
+    "src/iot.c" ,
+    "src/picture.c" ,
+    "src/adc_key.c" ,
+    "src/buzzer_control.c",
+    "src/charge_feedback.c",
+    "src/charge_safety.c",
+    "src/drv_light.c",
+    "src/drv_motor.c",
+    "src/drv_sensors.c",
+    "src/gas_sensor.c",
+    "src/human_sensor.c",
+    "src/power_sensor.c",
+    "src/relay_control.c",
+    "src/safe_charge_assets.c",
+  ]
+
+  include_dirs = [
+    "//utils/native/lite/include",
+    "include",
+    "src/include" ,
+    "//kernel/liteos_m/components/shell/include",
+    "//base/iot_hardware/peripheral/interfaces/kits",
+    "//device/rockchip/rk2206/adapter/include",
+    "//device/rockchip/rk2206/sdk_liteos/board/include",
+    "//device/rockchip/hardware/lib/hal/inc",
+    "//device/rockchip/hardware/lib/CMSIS/Device/RK2206/Include/",
+    "//third_party/cJSON",
+    "//third_party/musl/porting/liteos_m/kernel/include",
+    "//third_party/paho_mqtt/MQTTPacket/src",
+    "//third_party/paho_mqtt/MQTTClient-C/src",
+  ]
+
+  deps = [ "//device/rockchip/hardware:hardware" ]
+}

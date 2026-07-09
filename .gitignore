@@ -1,0 +1,42 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Node / web build output
+node_modules/
+dist/
+.npm-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-server*.log
+
+# OpenHarmony / firmware build output
+out/
+build/
+*.img
+*.bin
+*.md5
+*.elf
+*.map
+*.hex
+
+# Archives and generated bundles
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Local tooling and OS files
+.DS_Store
+Thumbs.db
+*.tmp
+tmp/
+.idea/
+.vscode/
